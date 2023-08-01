@@ -10,5 +10,7 @@ public class Autodromo{
 
         System.out.println(g310.getChassi());
         System.out.println(jeep.getChassi());
+
+        g310.ligar();
     }
 }
