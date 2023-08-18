@@ -1,6 +1,7 @@
+package Animais;
 public class Animal {
     //protected pode ser acessado pelos filhos
-    protected String nome;
+    String nome;
 
     public void setNome(String nome){
         this.nome = nome;
