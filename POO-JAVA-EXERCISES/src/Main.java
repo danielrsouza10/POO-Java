@@ -1,20 +1,14 @@
-import Poligonos.Circulo;
-import Poligonos.Poligono;
-import Poligonos.Quadrado;
+import Sobrescrita.Java;
+import Sobrescrita.Linguagem;
 
 public class Main {
     public static void main(String[] args) {
 
-        Circulo circulo = new Circulo();
-        Quadrado quadrado = new Quadrado();
-        Poligono poligono = new Poligono();
+        Java j1 = new Java();
+        Linguagem l1 = new Linguagem();
 
-        circulo.calcularArea();
-        quadrado.calcularArea();
-        poligono.calcularArea();
+        j1.mostrarInformacao();
+        l1.mostrarInformacao();
 
-        poligono.desenhar();
-        poligono.desenhar("#");
-        poligono.desenhar("$", 6);
     }
 }
