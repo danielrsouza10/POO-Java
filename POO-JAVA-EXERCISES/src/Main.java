@@ -12,5 +12,9 @@ public class Main {
         circulo.calcularArea();
         quadrado.calcularArea();
         poligono.calcularArea();
+
+        poligono.desenhar();
+        poligono.desenhar("#");
+        poligono.desenhar("$", 6);
     }
 }
