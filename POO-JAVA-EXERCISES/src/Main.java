@@ -1,20 +1,26 @@
-import Poligonos.Circulo;
-import Poligonos.Poligono;
-import Poligonos.Quadrado;
+import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Main {
     public static void main(String[] args) {
 
-        Circulo circulo = new Circulo();
-        Quadrado quadrado = new Quadrado();
-        Poligono poligono = new Poligono();
+        ArrayList<Integer> numeros = new ArrayList<>();
+        numeros.add(1);
+        numeros.add(3);
+        numeros.add(2);
 
-        circulo.calcularArea();
-        quadrado.calcularArea();
-        poligono.calcularArea();
+        System.out.println(numeros);
 
-        poligono.desenhar();
-        poligono.desenhar("#");
-        poligono.desenhar("$", 6);
+        // Criando uma instancia de Iterator
+
+        Iterator<Integer> it = numeros.iterator();
+
+        int numero = it.next();
+
+        System.out.println(numero);
+
+        while (it.hasNext()) {
+            it.forEachRemaining((value) -> System.out.print(value + ", "));
+        }
     }
 }
