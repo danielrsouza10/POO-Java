@@ -1,26 +1,27 @@
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.TreeSet;
 
 public class Main {
     public static void main(String[] args) {
 
-        ArrayList<Integer> numeros = new ArrayList<>();
-        numeros.add(1);
-        numeros.add(3);
-        numeros.add(2);
+        ArrayList<String> linguagens = new ArrayList<>();
 
-        System.out.println(numeros);
+        linguagens.add("JavaScript");
+        linguagens.add("C#");
+        linguagens.add("Java");
 
-        // Criando uma instancia de Iterator
+        System.out.println(linguagens);
 
-        Iterator<Integer> it = numeros.iterator();
+        // passar os dados de um arraylist para um vetor
 
-        int numero = it.next();
+        String[] arr = new String[linguagens.size()];
+        linguagens.toArray(arr);
 
-        System.out.println(numero);
-
-        while (it.hasNext()) {
-            it.forEachRemaining((value) -> System.out.print(value + ", "));
+        for (String item : arr) {
+            System.out.println(item + ", ");
         }
     }
 }
